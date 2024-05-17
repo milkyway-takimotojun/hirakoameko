@@ -2,17 +2,21 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  target:'static',
   build: {
     transpile: ['vuetify'],
+    extend(config, { isDev }) {
+      if (!isDev) {
+        config.output.publicPath = './static/'
+      }
   },
+},
   modules: [
     (_options, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (config) => {
-        // @ts-expect-error
+      nuxt.hooks.hook('vite:extendConfig', (config: any) => {
         config.plugins.push(vuetify({ autoImport: true }))
       })
-    },
-    //...
+    }
   ],
   css: [
     '~/node_modules/claymorphism-css/dist/clay.css',
