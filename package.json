@@ -7,16 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "@nuxtjs/vuetify": "^1.12.3",
     "claymorphism-css": "^1.0.5",
     "nuxt": "^3.10.3",
     "vue": "^3.4.19",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue-tweet-embed": "^2.4.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite-plugin-vuetify": "^2.0.2",
     "vuetify": "^3.5.7"
   }

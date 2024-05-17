@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="container">
         <div class="gazou">
-            <h1>画像</h1>
+            <img src="\assets\image\トップ.png" alt="トップ画像">
         </div>
         <div class="info">
             <h2>お知らせ</h2>
@@ -13,10 +13,12 @@
         </div>
         <div class="sns">
             <h1>sns各種</h1>
+            <Sns />
             <!-- <Sns /> -->
         </div>
         <div class="line">
             <h1>LINEスタンプ</h1>
+            <LineStamp />
         </div>
         <div class="sales">
             <h1>通信販売</h1>
@@ -29,22 +31,28 @@
 
 <style scoped>
 
+img{
+    height: auto;
+    width: 800px;
+}
+
 .gazou {
-    background-color: aqua;
-    height: 500px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .info {
-    
+    /* margin-top: 100px; */
 }
 
 .youtube {
     background-color: rgb(255, 0, 200);
     height: 500px;
+    /* margin-top: 50px; */
 }
 
 .sns {
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     height: 500px;
 }
 
@@ -61,6 +69,12 @@
 .works{
     background-color: rgb(162, 0, 255);
     height: 500px;
+}
+
+@media (max-width: 768px) { /* 768px 以下の画面幅の場合 */
+  img {
+    width: 100%;
+  }
 }
 
 </style>

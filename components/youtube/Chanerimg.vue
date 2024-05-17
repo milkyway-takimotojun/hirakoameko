@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- 画像を表示する -->
-      <img src="@/assets/image/test.png" atl="hirakoameko.png">
+      <img src="@/assets/image/hirakoameko.png" atl="hirakoameko.png">
     </div>
   </template>
   

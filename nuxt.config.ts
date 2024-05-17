@@ -16,8 +16,14 @@ export default defineNuxtConfig({
   ],
   css: [
     '~/node_modules/claymorphism-css/dist/clay.css',
+    '~/assets/css/main.css',
     // その他のCSSファイル
   ],
+  app:{
+    router:{
+      base: '/hirakoameko/'
+    },
+  },
   vite: {
     vue: {
       template: {
@@ -30,5 +36,13 @@ export default defineNuxtConfig({
       path: '~/components',
       extensions:['.vue']
     }
-  ]
+  ],
+  plugins:[
+    '~/plugins/vue-tweet-embed.ts',
+    // '~/plugins/vuetify.ts',
+  ],
+  buildModules: [
+    // その他のモジュール...
+    '@nuxtjs/vuetify',
+  ],
 })

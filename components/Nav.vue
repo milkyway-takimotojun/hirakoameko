@@ -14,11 +14,11 @@ export default {
     return {
       menuItems: [
         { text: 'Home', href: '/' },
-        { text: 'プロフィール', href: 'profile' },
-        { text: 'SNS各種', href: 'sns' },
-        { text: 'LINEスタンプ', href:'stump'},
-        { text: '通信販売', href: 'sales'},
-        { text: 'お仕事依頼', href: 'works' },
+        // { text: 'プロフィール', href: 'profile' },
+        // { text: 'SNS各種', href: 'sns' },
+        // { text: 'LINEスタンプ', href:'stump'},
+        // { text: '通信販売', href: 'sales'},
+        // { text: 'お仕事依頼', href: 'works' },
       ]
     };
   }

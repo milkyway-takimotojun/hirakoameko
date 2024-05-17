@@ -3,7 +3,7 @@
       <YoutubeChanerimg />
       <YoutubeComment />
       <YoutubeMovie />
-      <Button :button-text='buttonText' :url="chanelUrl"></Button>
+      <Button :button-text='buttonText' :url="chanelUrl" class="youtubebutton"></Button>
     </div>
   </template>
   
@@ -27,6 +27,7 @@
   </script>
   
   <style scoped>
+
   .video-card {
     
   }
@@ -35,6 +36,11 @@
     width: 100%; /* iframeの幅をカードの幅に合わせる */
     height: 100%; /* iframeの高さもカードに合わせる */
     border: none; /* iframeのボーダーをなくす */
+  }
+
+  .youtubebutton{
+    margin-top: 10px;
+    text-align: center;
   }
   </style>
   

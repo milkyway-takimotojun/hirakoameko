@@ -1,1 +1,8 @@
-import 
+body {
+    background-color: #fefbcc;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
