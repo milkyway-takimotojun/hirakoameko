@@ -17,6 +17,12 @@ img{
 }
 
 @media (max-width: 768px) { /* 768px 以下の画面幅の場合 */
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) { /* 768px 以下の画面幅の場合 */
   .imagecontainer {
     width: 100%;
   }
