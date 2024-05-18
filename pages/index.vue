@@ -22,9 +22,11 @@
         </div>
         <div class="sales">
             <h1>通信販売</h1>
+            <h2>CommingSoon</h2>
         </div>
         <div class="works">
             <h1>お仕事依頼</h1>
+            <h3>amekohirako@gmail.com</h3>
         </div>
     </div>
 </template>
@@ -34,6 +36,10 @@
 img{
     height: auto;
     width: 800px;
+}
+
+h2{
+    text-align: center;
 }
 
 .gazou {
@@ -58,17 +64,17 @@ img{
 }
 
 .line {
-    background-color: rgb(24, 221, 90);
+    /* background-color: rgb(24, 221, 90); */
     height: 500px;
 }
 
 .sales{
-    background-color: rgb(208, 255, 0);
+    /* background-color: rgb(208, 255, 0); */
     height: 500px;
 }
 
 .works{
-    background-color: rgb(162, 0, 255);
+    /* background-color: rgb(162, 0, 255); */
     height: 500px;
 }
 
