@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="gazou">
-            <img src="@/assets/image/トップ.png" alt="トップ画像">
+            <img src="/img/トップ.png" alt="トップ画像">
             <!-- <v-img src="/image/トップ.png"></v-img> -->
         </div>
         <div class="info">

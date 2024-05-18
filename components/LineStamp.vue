@@ -2,7 +2,7 @@
     <div class="imagecontainer">
       <!-- 外部サイトへの画像リンク -->
       <a href="https://store.line.me/stickershop/product/25559327/ja" target="_blank" rel="noopener noreferrer">
-        <img src="@/assets/image/linestamp.png" alt="ラインスタンプ画像" />
+        <img src="img/linestamp.png" alt="ラインスタンプ画像" />
       </a>
     </div>
 </template>
