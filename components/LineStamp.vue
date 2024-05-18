@@ -17,7 +17,7 @@ img{
 }
 
 @media (max-width: 768px) { /* 768px 以下の画面幅の場合 */
-  img {
+img{
     width: 100%;
   }
 }
