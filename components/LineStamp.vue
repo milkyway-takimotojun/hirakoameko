@@ -22,12 +22,6 @@ img{
   }
 }
 
-@media (max-width: 1080px) { /* 768px 以下の画面幅の場合 */
-  .imagecontainer {
-    width: 100%;
-  }
-}
-
 </style>
 
   
