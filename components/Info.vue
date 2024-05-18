@@ -11,8 +11,9 @@
   data() {
     return {
       notices: [
-        { id: 1, date: '2024/03/06', content: 'YouTubeをアップロードしました。', url: 'https://www.youtube.com/watch?v=m8SG_a6vgrY' },
-        { id: 2, date: '2024/01/02', content: '新サービスを開始しました。'},
+        { id: 1, date: '2024/05/15', content: 'YouTubeをアップロードしました。', url: 'https://www.youtube.com/watch?v=5RGgo771bLI' },
+        { id: 2, date: '2024/03/06', content: 'YouTubeをアップロードしました。', url: 'https://www.youtube.com/watch?v=m8SG_a6vgrY' },
+        { id: 3, date: '2024/01/02', content: '新サービスを開始しました。'},
         // 他のお知らせ内容...
       ]
     };
