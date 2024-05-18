@@ -9,3 +9,5 @@ const __dirname = dirname(__filename);
 
 // Rename: _nuxt to static
 fs.moveSync(resolve(__dirname, '../dist/_nuxt'), resolve(__dirname, '../dist/static'));
+
+fs.writeFileSync(resolve(__dirname, '../dist/.nojekyll'), '');

@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <div class="gazou">
-            <img src="\assets\image\トップ.png" alt="トップ画像">
+            <img src="/img/トップ.png" alt="トップ画像">
+            <!-- <v-img src="/image/トップ.png"></v-img> -->
         </div>
         <div class="info">
             <h2>お知らせ</h2>
@@ -39,6 +40,7 @@ img{
 .gazou {
     text-align: center;
     margin-top: 50px;
+    /* background-image: url("/assets/トップ.png"); */
 }
 
 .info {

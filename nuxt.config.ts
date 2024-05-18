@@ -1,18 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config'
+import { NuxtOptions } from 'nuxt'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  target:'static',
   build: {
-    transpile: ['vuetify'],
-    extend(config, { isDev }) {
-      if (!isDev) {
-        config.output.publicPath = './static/'
-      }
+    transpile: [/'vuetify'/],
   },
-},
   modules: [
-    (_options, nuxt) => {
+    (_options: any, nuxt: NuxtOptions) => {
       nuxt.hooks.hook('vite:extendConfig', (config: any) => {
         config.plugins.push(vuetify({ autoImport: true }))
       })
@@ -23,9 +20,11 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     // その他のCSSファイル
   ],
-  app:{
-    router:{
-      base: '/hirakoameko/'
+  app: {
+    // buildAssetsDir: '/assets/',
+    router: {
+      base: '/hirakoameko/',
+      cdnURL: '/hirakoameko/',
     },
   },
   vite: {
@@ -35,13 +34,13 @@ export default defineNuxtConfig({
       },
     },
   },
-  components:[
+  components: [
     {
       path: '~/components',
-      extensions:['.vue']
+      extensions: ['.vue']
     }
   ],
-  plugins:[
+  plugins: [
     '~/plugins/vue-tweet-embed.ts',
     // '~/plugins/vuetify.ts',
   ],
@@ -49,4 +48,7 @@ export default defineNuxtConfig({
     // その他のモジュール...
     '@nuxtjs/vuetify',
   ],
+  router: {
+    base:'/hirakoameko',
+  }
 })
