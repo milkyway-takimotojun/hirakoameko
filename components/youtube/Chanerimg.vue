@@ -6,7 +6,7 @@
   </template>
   
   <script setup>
-  // propsで外部からデータを受け取る
+  
   
 //   const imageUrl = '@/assets/img/test.png'
   </script>

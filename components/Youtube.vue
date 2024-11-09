@@ -1,7 +1,7 @@
 <template>
     <div class="">
-      <YoutubeChanerimg />
-      <YoutubeComment />
+      <!-- <YoutubeChanerimg />
+      <YoutubeComment /> -->
       <YoutubeMovie />
       <Button :button-text='buttonText' :url="chanelUrl" class="youtubebutton"></Button>
     </div>
@@ -18,7 +18,7 @@
   },
   data() {
     return {
-      buttonText: 'チャンネルはこちら', // ここに任意のボタンテキストを設定
+      buttonText: 'チャンネルはこちら', 
       chanelUrl: 'https://www.youtube.com/@ameko_hirako'
     }
   }

@@ -11,18 +11,18 @@
             <h1>Youtube</h1>
             <Youtube />
         </div>
-        <div class="sns">
+ <!--       <div class="sns">
             <h1>sns各種</h1>
             <Sns />
-            <!-- <Sns /> -->
         </div>
+-->
         <div class="line">
             <h1>LINEスタンプ</h1>
             <LineStamp />
         </div>
         <div class="sales">
             <h1>通信販売</h1>
-            <h2>CommingSoon</h2>
+            <Sales />
         </div>
         <div class="works">
             <h1>お仕事依頼</h1>
